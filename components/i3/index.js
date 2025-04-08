@@ -56,7 +56,6 @@ export default function I3() {
             {/* Cột bên phải: khung demo video / hình ảnh */}
             <div className={styles.rightColumn}>
                 <div className={styles.demoWrapper}>
-                    {/* Thay ảnh demo-hand.jpg bằng ảnh/video của bạn */}
                     <Image
                         src="https://lh3.googleusercontent.com/d/1hZZu1OnxN1XamYfv5vEP2-R75cdF2CGG"
                         alt="Hand detection"
@@ -65,8 +64,6 @@ export default function I3() {
                         className={styles.demoImage}
                     />
                     <p className={styles.note}>Please turn the camera on</p>
-
-                    {/* Khung hiển thị kết quả trả về */}
                     <div className={styles.resultBox}>
                         <p className={styles.resultTitle}>Results returned</p>
                         <h2 className={styles.resultLetter}>A</h2>

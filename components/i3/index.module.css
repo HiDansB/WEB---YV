@@ -16,14 +16,13 @@
 
 .rightColumn {
     flex: 1;
-    min-width: 300px;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
 .title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 32px;
@@ -68,7 +67,6 @@
 /* Khối demo bên phải */
 .demoWrapper {
     position: relative;
-    max-width: 600px;
     width: calc(100% - 110px);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -120,4 +118,29 @@
     margin: 0;
     font-size: 0.8rem;
     color: #8A79DF;
+}
+
+@media (max-width:768px) {
+    .title {
+        text-align: center;
+    }
+
+    .featureItem {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .rightColumn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .demoWrapper {
+        width: 90%;
+    }
+
+    .resultBox {
+        position: unset;
+        width: 100%;
+    }
 }

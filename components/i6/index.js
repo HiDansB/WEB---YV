@@ -6,7 +6,7 @@ export default function I6() {
     return (
         <div className={styles.solutionSection}>
             <div className={styles.downloadSection}>
-                <div style={{ display: 'flex' }}>
+                <div className={styles.fs}>
 
                     <div className={styles.downloadWrapper} style={{ flex: 1 }}>
                         <div className={styles.subheader}>
@@ -31,7 +31,7 @@ export default function I6() {
                         flex: 1.3, display: 'flex', justifyContent: 'end', alignItems: 'center',
                         position: 'relative'
                     }} >
-                        <div style={{ position: 'relative', aspectRatio: '3/2', width: '90% ' }}>
+                        <div className={styles.lk}>
                             <Image
                                 src="https://lh3.googleusercontent.com/d/1b1PJHPw0ebdwWlgi30x4_TQSj7j5oSxd"
                                 alt="Your Voice Application"

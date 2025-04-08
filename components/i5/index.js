@@ -6,8 +6,8 @@ export default function I5() {
     return (
         <div className={styles.solutionSection}>
             <div className={styles.downloadSection}>
-                <div style={{ display: 'flex' }}>
-                    <div className={styles.phoneMockup} style={{ flex: 1.3, display: 'flex', justifyContent: 'start', alignItems: 'center' }} >
+                <div className={styles.lfex}>
+                    <div className={styles.phoneMockup}  >
                         <div style={{ position: 'relative', aspectRatio: '3/2.5', width: '90% ' }}>
                             <Image
                                 src="https://lh3.googleusercontent.com/d/1CxDHyZPu06DEFGiTWxBvbgMtolihhiVG"

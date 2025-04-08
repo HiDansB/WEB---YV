@@ -135,7 +135,7 @@ export default function I4() {
             <div className={styles.downloadSection}>
 
 
-                <div style={{ display: 'flex' }}>
+                <div className={styles.fs}>
                     <div className={styles.downloadWrapper} style={{ flex: 1 }}>
                         <h3 className={styles.downloadTitle}>Download and experience</h3>
                         {/* Nút Download APK */}
@@ -151,7 +151,7 @@ export default function I4() {
                     </div>
 
                     {/* Mockup điện thoại */}
-                    <div className={styles.phoneMockup} style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
+                    <div className={styles.phoneMockup}  >
                         <div style={{ position: 'relative', aspectRatio: 1, width: '90% ' }}>
                             <Image
                                 src="https://lh3.googleusercontent.com/d/1YY0ofZitw4Z01d0YGvcGOoHaUiuGY6w3"

@@ -213,9 +213,29 @@
     .leftSide {
         text-align: center;
         max-width: 100%;
+        margin: 0;
     }
 
     .rightSide {
         justify-content: center;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .heroSection {
+        height: 70vh;
+    }
+
+    .buttonGroup {
+        justify-content: center;
+    }
+
+    .rightSide {
+        display: none;
+    }
+    .mainHeading{
+        margin-top: 64px;
     }
 }

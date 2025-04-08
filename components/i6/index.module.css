@@ -158,6 +158,10 @@
     position: absolute;
 }
 
+.fs {
+    display: flex;
+}
+
 /* Thẻ quote chính */
 .quoteCard {
     position: relative;
@@ -214,4 +218,24 @@
     font-size: 1rem;
     color: #FFA229;
     /* màu sao cam/vàng */
+}
+
+.lk {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .fs {
+        flex-direction: column;
+    }
+
+    .quoteCard {
+        display: none;
+    }
+
+    .lk {
+        width: 100%;
+    }
 }

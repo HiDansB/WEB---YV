@@ -153,4 +153,8 @@
         width: calc(50% - 10px);
         /* 2 bài viết/1 hàng (mỗi item chiếm ~50%) */
     }
+
+    .rightColumn {
+        display: none;
+    }
 }
