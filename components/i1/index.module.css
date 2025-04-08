@@ -1,0 +1,103 @@
+.main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Phần tiêu đề trên cùng */
+.headerSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.developmentOrg {
+    text-align: center;
+}
+
+.logoContainer {
+    margin: 18px 0
+}
+
+/* Phần tiêu đề chính */
+.mainFunctions {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mainFunctions h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #f39c12;
+    /* Màu cam/ vàng tùy chỉnh cho chữ "Your Voice." */
+}
+
+.subTitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+/* Phần 3 khối chức năng */
+.featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* canh giữa */
+}
+
+.featureBox {
+    background-color: #fafafa;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.featureBox h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.featureBox p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Style cho vòng tròn icon */
+.iconCircle,
+.iconCircleOrange,
+.iconCircleBlue {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Các màu icon nền khác nhau */
+.iconCircle {
+    background-color: #2c42f3;
+    /* Xanh lam đậm cho icon đầu */
+}
+
+.iconCircleOrange {
+    background-color: #ffa300;
+    /* Màu cam cho icon giữa */
+}
+
+.iconCircleBlue {
+    background-color: #0099ff;
+    /* Xanh dương nhạt cho icon cuối */
+}
