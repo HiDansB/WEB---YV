@@ -1,0 +1,156 @@
+.articlesSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #2f327d;
+    margin-top: 64px;
+}
+
+.mainContent {
+    display: flex;
+    gap: 64px;
+}
+
+/* ========== Cột trái ========== */
+.leftColumn {
+    flex: 1;
+}
+
+.mainArticle {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Khung ảnh bài viết chính */
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 5/3;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    border-radius: 8;
+}
+
+.badge {
+    display: inline-block;
+    margin: 16px 0;
+    padding: 4px 16px;
+    background-color: #FFC14F;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 16px;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #2a2d56;
+}
+
+.description {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.readMore {
+    margin: 16px 0;
+    display: inline-block;
+    font-size: 18px;
+    color: #4a7bf7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+/* ========== Cột phải ========== */
+.rightColumn {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Bài viết nhỏ bên phải */
+.sideArticle {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    gap: 4px;
+}
+
+.sideImageWrapper {
+    position: relative;
+    width: 40%;
+    aspect-ratio: 5/3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Badge thứ 2 nếu muốn màu khác */
+.badge2 {
+    position: absolute;
+    display: inline-block;
+    margin: 0 8px 4px 8px;
+    padding: 4px 8px;
+    background-color: #F4C467;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 16px;
+    bottom: 8px;
+    right: 8px;
+    text-transform: uppercase;
+}
+
+.sideTitle {
+    font-size: 1rem;
+    color: #2a2d56;
+    margin: 0 8px 4px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.sideDesc {
+    margin: 0 8px 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: justify;
+}
+
+/* Responsive: khi màn hình hẹp, xếp dọc 2 cột */
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .rightColumn {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sideArticle {
+        width: calc(50% - 10px);
+        /* 2 bài viết/1 hàng (mỗi item chiếm ~50%) */
+    }
+}

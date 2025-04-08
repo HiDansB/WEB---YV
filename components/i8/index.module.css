@@ -1,0 +1,89 @@
+.feedbackSection {
+    background-color: #1E1F2B;
+    color: #ccc;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    min-height: 300px;
+    font-family: sans-serif;
+}
+
+.topDivider {
+    width: 1px;
+    height: 40px;
+    background: #333;
+    margin: 0 auto 20px;
+    /* Hoặc có thể dùng border hay pseudo-element nếu muốn */
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #d1d1e0;
+    /* Gần với màu chữ trong hình */
+}
+
+.inputGroup {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.emailInput {
+    background-color: transparent;
+    border: 2px solid #3D3E52;
+    border-radius: 30px;
+    padding: 12px 16px;
+    color: #ccc;
+    width: 350px;
+    /* Hoặc tuỳ ý */
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.emailInput::placeholder {
+    color: #666;
+}
+
+.emailInput:focus {
+    border-color: #666;
+}
+
+.commentButton {
+    background: #4E62EE;
+    /* Màu xanh lam tím */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.commentButton:hover {
+    background-color: #3f52cf;
+    box-shadow: 0 0 10px rgba(78, 98, 238, 0.6);
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.separator {
+    opacity: 0.7;
+}
+
+.year {
+    color: #666;
+    font-size: 16px;
+    margin-top: 16px;
+}

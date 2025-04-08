@@ -1,0 +1,217 @@
+/* Phần Download */
+.downloadSection {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.solutionSection {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.downloadTitle {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.downloadWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.downloadButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    width: 70%;
+
+}
+
+.androidBtn {
+    border: 3px solid #5EBD24;
+    color: #5EBD24;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.iosBtn {
+    border: 3px solid #025F9C;
+    color: #025F9C;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.downloadButton:hover {
+    opacity: 0.9;
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+/* Ảnh mô phỏng điện thoại */
+.phoneMockup {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.mockupPhoneImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .downloadWrapper {
+        flex-direction: column;
+    }
+}
+
+
+.subheader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+/* Đường kẻ ngang ngắn ở đầu - tuỳ chỉnh */
+.line {
+    width: 40px;
+    height: 0;
+    border: 1px solid #666;
+    margin: 0;
+    padding: 0;
+}
+
+.focusText {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mainHeading {
+    font-size: 28px;
+    color: #2F327D;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    text-align: start;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 16px;
+    color: #696984;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.learnMoreBtn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    /* Nút rỗng, chỉ có viền */
+    border: 2px solid #FF7B29;
+    /* Màu cam/da (tuỳ thay đổi) */
+    border-radius: 24px;
+    color: #FF7B29;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.learnMoreBtn:hover {
+    background-color: #FF7B29;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    right: -32px;
+    bottom: -64px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+/* Thẻ quote chính */
+.quoteCard {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    width: 400px;
+    /* hoặc tuỳ ý */
+    min-height: 180px;
+    overflow: hidden;
+}
+
+/* Thanh màu dọc bên trái */
+.leftBar {
+    width: 8px;
+    background: linear-gradient(180deg, #FF715B 0%, #FFAA54 100%);
+    /* hoặc màu khác */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* Phần nội dung (quote + footer) */
+.content {
+    flex: 1;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Đoạn quote */
+.quote {
+    font-size: 1rem;
+    color: #4A4A68;
+    margin: 0 0 16px;
+    line-height: 1.4;
+}
+
+/* Chân thẻ (tác giả + rating) */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Rating (5 sao) */
+.stars {
+    font-size: 1rem;
+    color: #FFA229;
+    /* màu sao cam/vàng */
+}
