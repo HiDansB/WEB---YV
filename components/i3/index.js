@@ -13,7 +13,7 @@ export default function I3() {
   // Gọi API /current_data mỗi 2 giây để lấy kết quả dự đoán
   useEffect(() => {
     const intervalId = setInterval(() => {
-      fetch("http://localhost:5000/current_data")
+      fetch("http://127.0.0.1:5000/current_data")
         .then((res) => res.json())
         .then((data) => {
           setPredictionData(data);
@@ -103,7 +103,7 @@ export default function I3() {
       <div className={styles.rightColumn}>
         <div className={styles.demoWrapper}>
           <Image
-            src="http://localhost:5000/video_feed"
+            src="http://127.0.0.1:5000/video_feed"
             alt="Hand detection"
             width={600}
             height={400}
